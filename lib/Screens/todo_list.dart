@@ -25,8 +25,11 @@ class _ToDoListPageState extends State<ToDoListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: Text('developed by taufiq'),
       appBar: AppBar(
-        title: Center(child: Text("ToDo List")),
+        title: Center(
+          child: Text("ToDo List"),
+        ),
       ),
       body: Visibility(
         visible: isLoading,
